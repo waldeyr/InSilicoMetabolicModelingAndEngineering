@@ -1,0 +1,73 @@
+scenarioId	ncbiTaxon	ncbiSpecies	ncbiAccession	pubmedAccession 	modName	experiment	tissue	condition	yield	ec	kegg	rhea	iubmb
+s1	3702	Arabidopsis thaliana	ABO09887	15918888	alpha-barbatene	adult	PO|0009046|flower	none	side	none	none	none	none
+s2	542674	Phyla dulcis	AFR23371	22867794	alpha-bergamotene	young	PO|0025034|leaf	none	main	4.2.3.54	none	30471	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/54.html
+s3	542674	Phyla dulcis	AFR23372	22867794	alpha-bisabolol	young	PO|0025034|leaf	none	main	4.2.3.-	none	none	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/
+s4	3702	Arabidopsis thaliana	ABO09887	15918888	alpha-chamigrene	adult	PO|0009046|flower	none	side	none	none	none	none
+s5	542674	Phyla dulcis	AFR23368	22867794	alpha-copaene	young	PO|0025034|leaf	none	main	4.2.3.133	none	33991	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/133.html
+s6	3702	Arabidopsis thaliana	AAO85539	15918888	alpha-copaene	adult	PO|0009046|flower	none	side	4.2.3.133	none	33991	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/133.html
+s7	3702	Arabidopsis thaliana	ABO09887	15918888	alpha-cuprenene	adult	PO|0009046|flower	none	side	none	none	none	none
+s8	4530	Oryza sativa	ABJ16553	17524436	alpha-curcumene	seedling	PO|0025034|leaf	PECO|0007407|methyl jasmonate exposure	side	none	none	none	none
+s9	3659	Cucumis sativus	AAU05951	15310834	alpha-farnesene	adult	PO|0025034|leaf	PECO|0007407|methyl jasmonate exposure	main	none	none	none	none
+s10	3880	Medicago truncatula	AAV36464	17924138	alpha-humulene 	adult	PO|0025034|leaf	PECO|0007115|Spodoptera spp. Exposure	side	4.2.3.104	R08373	31898	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/104.html
+s11	127986	Matricaria chamomilla var. Recutita	AFM43734	22682202	alpha-humulene 	recombinant	none	none	side	4.2.3.104	R08373	31898	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/104.html
+s12	4580	Zea perennis	ABY79214	18296628	alpha-humulene 	recombinant	none	none	side	4.2.3.104	R08373	31898	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/104.html
+s13	76912	Zea mays subsp. parviglumis	ABY79213	18296628	alpha-humulene 	recombinant	none	none	side	4.2.3.104	R08373	31898	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/104.html
+s14	4579	Zea mays subsp. mexicana	ABY79212	18296628	alpha-humulene 	recombinant	none	none	side	4.2.3.104	R08373	31898	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/104.html
+s15	15945	Zea luxurians	ABY79211	18296628	alpha-humulene 	recombinant	none	none	side	4.2.3.104	R08373	31898	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/104.html
+s16	112001	Zea mays subsp. huehuetenangensis	ABY79210	18296628	alpha-humulene 	recombinant	none	none	side	4.2.3.104	R08373	31898	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/104.html
+s17	4576	Zea diploperennis	ABY79209	18296628	alpha-humulene 	recombinant	none	none	side	4.2.3.104	R08373	31898	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/104.html
+s18	311405	Zingiber zerumbet	BAG12020	18273640	alpha-humulene 	recombinant	none	none	main	4.2.3.104	R08373	31898	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/104.html
+s19	4232	Helianthus annuus	AAY41422	19580670	alpha-humulene 	recombinant	none	none	main	4.2.3.104	R08373	31898	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/104.html
+s20	3702	Arabidopsis thaliana	AAO85539	15918888	alpha-humulene 	adult	PO|0009046|flower	none	side	4.2.3.104	R08373	31898	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/104.html
+s21	35608	Artemisia annua	AAL79181	12409018	alpha-humulene 	recombinant	none	none	side	4.2.3.104	R08373	31898	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/104.html
+s22	4232	Helianthus annuus	AAY41422	19580670	alpha-muurolene	recombinant	none	none	main	none	none	none	none
+s23	4530	Oryza sativa	ABJ16553	17524436	alpha-selinene	recombinant	none	none	side	4.2.3.86	R09886	30383	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/86.html
+s24	3702	Arabidopsis thaliana	ABO09887	15918888	beta-acoradiene	adult	PO|0009046|flower	none	side	none	none	none	none
+s25	3702	Arabidopsis thaliana	ABO09887	15918888	beta-barbetene	adult	PO|0009046|flower	none	side	none	none	none	none
+s26	3702	Arabidopsis thaliana	ABO09887	15918888	beta-bisabolene	adult	PO|0009046|flower	none	side	4.2.3.55	R09623	28266	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/55.html
+s27	4530	Oryza sativa	ABJ16553	17524436	beta-bisabolene	seedling	PO|0025034|leaf	PECO|0007407|methyl jasmonate exposure	side	4.2.3.55	R09623	28266	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/55.html
+s28	3880	Medicago truncatula	AAV36464	17924138	beta-caryophyllene	adult	PO|0025034|leaf	PECO|0007115|Spodoptera spp. Exposure	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s29	3880	Medicago truncatula	AAV36464	17924138	beta-caryophyllene	adult	PO|0025034|leaf	PECO|0007407|methyl jasmonate exposure	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s30	3880	Medicago truncatula	AAV36464	17924138	beta-caryophyllene	recombinant	none	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s31	3659	Cucumis sativus	AAU05952	15310834	beta-caryophyllene	recombinant	none	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s32	88036	Selaginella moellendorffii	AFR34007	22908266	beta-caryophyllene	recombinant	none	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s33	542674	Phyla dulcis	AFR23370	22867794	beta-caryophyllene	young	PO|0025034|leaf	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s34	127986	Matricaria chamomilla var. Recutita	AFM43734	22682202	beta-caryophyllene	recombinant	none	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s35	4530	Oryza sativa	ACF05531	18433439	beta-caryophyllene	adult	PO|0025034|leaf	PECO|0007115|Spodoptera spp. Exposure	side	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s36	4580	Zea perennis	ABY79214	18296628	beta-caryophyllene	recombinant	none	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s37	76912	Zea mays subsp. parviglumis	ABY79213	18296628	beta-caryophyllene	recombinant	none	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s38	4579	Zea mays subsp. mexicana	ABY79212	18296628	beta-caryophyllene	recombinant	none	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s39	15945	Zea luxurians	ABY79211	18296628	beta-caryophyllene	recombinant	none	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s40	112001	Zea mays subsp. huehuetenangensis	ABY79210	18296628	beta-caryophyllene	recombinant	none	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s41	4576	Zea diploperennis	ABY79209	18296628	beta-caryophyllene	recombinant	none	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s42	4530	Oryza sativa	ABJ16553	17524436	beta-caryophyllene	seedling	PO|0025034|leaf	PECO|0007407|methyl jasmonate exposure	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s43	311405	Zingiber zerumbet	BAG12020	18273640	beta-caryophyllene	recombinant	none	none	side	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s44	4232	Helianthus annuus	AAY41422	19580670	beta-caryophyllene	recombinant	none	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s45	3702	Arabidopsis thaliana	AAO85539	15918888	beta-caryophyllene	adult	PO|0009046|flower	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s46	35608	Artemisia annua	AAL79181	12409018	beta-caryophyllene	recombinant	none	none	main	4.2.3.57	R08541	28297	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/57.html
+s47	3702	Arabidopsis thaliana	ABO09887	15918888	beta-chamigrene	adult	PO|0009046|flower	none	side	none	none	none	none
+s48	4530	Oryza sativa	ABJ16553	17524436	beta-elemene	seedling	PO|0025034|leaf	PECO|0007407|methyl jasmonate exposure	side	none	none	none	none
+s49	4530	Oryza sativa	ABJ16553	17524436	beta-elemene	recombinant	none	none	side	none	none	none	none
+s50	3702	Arabidopsis thaliana	ABO09887	15918888	beta-farnesene	adult	PO|0009046|flower	none	side	none	none	none	none
+s51	4530	Oryza sativa	ABJ16553	17524436	beta-farnesene	seedling	PO|0025034|leaf	PECO|0007407|methyl jasmonate exposure	side	none	none	none	none
+s52	4530	Oryza sativa	ACF05531	18433439	beta-sesquiphellandrene	adult	PO|0025034|leaf	PECO|0007115|Spodoptera spp. Exposure	main	4.2.3.123	none	32699	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/123.html
+s53	3702	Arabidopsis thaliana	ABO09887	15918888	beta-sesquiphellandrene	adult	PO|0009046|flower	none	side	4.2.3.123	none	32699	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/123.html
+s54	4530	Oryza sativa	ABJ16553	17524436	beta-sesquiphellandrene	seedling	PO|0025034|leaf	PECO|0007407|methyl jasmonate exposure	side	4.2.3.123	none	32699	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/123.html
+s55	542674	Phyla dulcis	AFR23369	22867794	bicyclogermacrene	young	PO|0025034|leaf	none	main	4.2.3.100	none	31999	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/100.html
+s56	3702	Arabidopsis thaliana	ABO09887	15918888	cuparene	adult	PO|0009046|flower	none	side	none	none	none	none
+s57	542674	Phyla dulcis	AFR23368	22867794	delta-cadinene	young	PO|0025034|leaf	none	main	none	none	none	none
+s58	4232	Helianthus annuus	AAY41422	19580670	delta-cadinene	recombinant	none	none	main	none	none	none	none
+s59	3702	Arabidopsis thaliana	ABO09887	15918888	delta-cuprenene	adult	PO|0009046|flower	none	side	none	none	none	none
+s60	4580	Zea perennis	ABY79214	18296628	delta-elemene	recombinant	none	none	side	none	none	none	none
+s61	76912	Zea mays subsp. parviglumis	ABY79213	18296628	delta-elemene	recombinant	none	none	side	none	none	none	none
+s62	4579	Zea mays subsp. mexicana	ABY79212	18296628	delta-elemene	recombinant	none	none	side	none	none	none	none
+s63	15945	Zea luxurians	ABY79211	18296628	delta-elemene	recombinant	none	none	side	none	none	none	none
+s64	112001	Zea mays subsp. huehuetenangensis	ABY79210	18296628	delta-elemene	recombinant	none	none	side	none	none	none	none
+s65	4576	Zea diploperennis	ABY79209	18296628	delta-elemene	recombinant	none	none	side	none	none	none	none
+s66	4530	Oryza sativa	ABJ16553	17524436	Eudesma-4(14)	11-dine	recombinant	none	none	side	none	none	none
+s67	4530	Oryza sativa	ACF05531	18433439	gamma-bisabolene	adult	PO|0025034|leaf	PECO|0007115|Spodoptera spp. Exposure	main	none	none	none	none
+s68	3702	Arabidopsis thaliana	ABO09887	15918888	isobazzanene	adult	PO|0009046|flower	none	side	none	none	none	none
+s69	3702	Arabidopsis thaliana	ABO09887	15918888	thujopsene	adult	PO|0009046|flower	none	main	none	none	none	none
+s70	4530	Oryza sativa	ACF05531	18433439	zingiberene	adult	PO|0025034|leaf	PECO|0007115|Spodoptera spp. Exposure	main	4.2.3.65	none	28643	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/65.html
+s71	3702	Arabidopsis thaliana	ABO09887	15918888	zingiberene	adult	PO|0009046|flower	none	side	4.2.3.65	none	28643	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/65.html
+s72	4530	Oryza sativa	ABJ16553	17524436	zingiberene	seedling	PO|0025034|leaf	PECO|0007407|methyl jasmonate exposure	side	4.2.3.65	none	28643	http://www.sbcs.qmul.ac.uk/iubmb/enzyme/EC4/2/3/65.html
