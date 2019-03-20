@@ -117,4 +117,38 @@ You can change the number of iterations in the line:
 dg = hypergraph.getHyperGraph(eductMolecules, 5)
 ```
 
+# How to run the simulations using DOCKER?
 
+Have you installed docker in your computer? 
+
+Try: https://docs.docker.com/install
+
+Downloading the docker container with all environment
+
+`docker pull waldeyr/fedora26_mod-v0.7.0`
+
+Running a docker with a ready environment 
+
+`docker run -ti waldeyr/fedora26_mod-v0.7.0:mod-v0.7.0 bash`
+
+Optionally, you can map the simulation folder in docker to your a local folder in your computer
+
+`docker run -v /home/$USER:/home/docker/InSilicoMetabolicModelingAndEngineering -ti fedora26_mod-v0.7.0:mod-v0.7.0 bash`
+
+Running the simulation 01
+
+`cd /home/docker/InSilicoMetabolicModelingAndEngineering/simulation_01`
+
+`/home/docker/mod-v0.7.0/bin/mod -f processes_simulation_01.py`
+
+Running the simulation 02
+
+`cd /home/docker/InSilicoMetabolicModelingAndEngineering/simulation_02`
+
+`/home/docker/mod-v0.7.0/bin/mod -f processes_simulation_02.py`
+
+Running the simulation 03
+
+`cd /home/docker/InSilicoMetabolicModelingAndEngineering/simulation_03`
+
+`/home/docker/mod-v0.7.0/bin/mod -f processes_simulation_03.py`
