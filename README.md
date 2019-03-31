@@ -149,6 +149,11 @@ Running the simulation 03
 
 `$HOME/mod-v0.7.0/bin/mod -f Molecules.py -f Processes_Store.py`
 
+![Screenshot of simulation and results storing](https://github.com/waldeyr/InSilicoMetabolicModelingAndEngineering/blob/master/screenshots/Screenshot_Processes_Store.png)
+
+
+
+
 You can change the network removing or adding rules to the my_sumulation_file.py in the proper lines:
 ```
 #!python
