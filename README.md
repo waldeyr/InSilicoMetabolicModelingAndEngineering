@@ -104,15 +104,15 @@ Try: https://docs.docker.com/install
 
 Downloading the docker container with all environment
 
-`docker pull waldeyr/fedora26_mod-v0.7.0:2path`
+`docker pull waldeyr/fedora26_mod-v0.7.0:2path15`
 
 Running a docker with a ready environment 
 
-`docker run -ti waldeyr/fedora26_mod-v0.7.0:mod-v0.7.0 bash`
+`docker run -ti waldeyr/fedora26_mod-v0.7.0:2path15 bash`
 
 Optionally, you can map the docker simulation folder and neo4j ports to your local computer
 
-`docker run -p 7474:7474 -v /home/mendes/docker/shared:/home/docker/shared -ti waldeyr/fedora26_mod-v0.7.0:2path15 bash`
+`docker run -p 7474:7474 -v $HOME/docker/shared:/home/docker/shared -ti waldeyr/fedora26_mod-v0.7.0:2path15 bash`
 
 * Don't forget to start the database inside the docker container: `neo4j start`
 
