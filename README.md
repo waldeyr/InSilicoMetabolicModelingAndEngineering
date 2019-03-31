@@ -112,7 +112,7 @@ Running a docker with a ready environment
 
 Optionally, you can map the simulation folder in docker to your a local folder in your computer
 
-`docker run -v /home/$USER:$HOME/InSilicoMetabolicModelingAndEngineering -p 7474:7474 -ti fedora26_mod-v0.7.0:mod-v0.7.0 bash`
+`docker run -v /home/$USER:$HOME/InSilicoMetabolicModelingAndEngineering -p 7474:7474 -ti fedora26_mod-v0.7.0:2path bash`
 
 Please note that:
 * Neo4J browser runs in the port 7474 (default). So you can access from your browser http://localhost:7474
@@ -145,13 +145,21 @@ Running the simulation 03
 
 ### How to run and store the simulations on Neo4J?
 
-`cd $HOME/InSilicoMetabolicModelingAndEngineering/simulation_store`
+Check if the database is running:
 
-`$HOME/mod-v0.7.0/bin/mod -f Molecules.py -f Processes_Store.py`
+`neo4j status`
+
+If not, start the database:
+
+`neo4j start`
+
+Enter on the simulation folder
+
+`cd $PATH_TO/InSilicoMetabolicModelingAndEngineering/simulation_store`
+
+`$PATH_TO/mod-v0.7.0/bin/mod -f Molecules.py -f Processes_Store.py`
 
 ![Screenshot of simulation and results storing](https://github.com/waldeyr/InSilicoMetabolicModelingAndEngineering/blob/master/screenshots/Screenshot_Processes_Store.png)
-
-
 
 
 You can change the network removing or adding rules to the my_sumulation_file.py in the proper lines:
