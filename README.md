@@ -4,88 +4,150 @@
 
 ## Article: Exploring plant sesquiterpene diversity by generating chemical networks
 
-In order to embrace the reproducing the experiments, this repository contains:
-* a tutorial to setup a Linux evironment 
-* simulation codes
+In order to embrace the reproducing of the experiments, this repository contains:
+* A tutorial to setup a Linux evironment 
+* A tutorial to setup a Linux Docker evironment (recommended)
+* Code to run the paper simulations 
 
-## Dependencies
-It only runs in Linux environments.
 
-### Neo4J
+## Install MØDatschgerl v0.7.0 on Fedora 26
+
+### Dependencies
+
+It only runs in Linux environments. 
+
+The examples here were built for [Fedora Linux](https://getfedora.org/). We going to provide an Ubuntu tutorial as soon as possible.
+
+#### Neo4J
 * [Neo4J >=3.4](https://neo4j.com/download-center)
 
-After download it, just extract the content to your favorute folder and start the database using the comand
+After download it, just extract the content to your favourite folder and start the database using the comand
 
-```
-#!shell
-./neo4j start
-```
+`./neo4j start`
 
 I a few seconds an interface will be available in your browser: http://localhost:7474/browser
 
-### Python dependencies
-* [Python >= 3.5](https://www.python.org/downloads/release/python-350/)
-* [Py2Neo](https://py2neo.org/v4/) : pip install py2neo
+Another way is to install Neo4J with rpm:
 
+`cd /tmp && wget http://debian.neo4j.org/neotechnology.gpg.key && rpm --import neotechnology.gpg.key`
 
-## Install MØDatschgerl v0.7.0 on Fedora 29 scientific
+```
+cat <<EOF>  /etc/yum.repos.d/neo4j.repo
+[neo4j]
+name=Neo4j Yum Repo
+baseurl=http://yum.neo4j.org/stable
+enabled=1
+gpgcheck=1
+EOF
+```
+`dnf install neo4j -y`
+
+#### Python dependencies
+* [Python >= 3.5](https://www.python.org/downloads/release/python-350/) - Python 3 programming language
+* [Py2Neo](https://py2neo.org/v4/) - python driver and API for Neo4J:
+
+`pip install py2neo`
+
+`python3 -m pip install pip --upgrade`
+
+`python3 -m pip install py2neo`
 
 ### Set up folders
-* mkdir $HOME/sources
-* mkdir $HOME/mod-v0.7.0
-* sudo ln -s /usr/include/python3.7m /usr/include/python3.7
+`mkdir $HOME/sources`
+`mkdir $HOME/mod-v0.7.0`
+`sudo ln -s /usr/include/python3.7m /usr/include/python3.7`
 
 ### Downloads
-* cd $HOME/sources
-* sudo dnf update 
-* sudo dnf install git python3-devel python3-sphinx librsvg2-devel pango-devel openbabel-devel pdf2svg -y
-* wget https://dl.bintray.com/boostorg/release/1.64.0/source/boost_1_64_0.tar.gz && tar -xf boost_1_64_0.tar.gz
-* wget -c https://graphviz.gitlab.io/pub/graphviz/stable/SOURCES/graphviz.tar.gz -O graphviz-2.40.1.tar.gz && tar -xf graphviz-2.40.1.tar.gz
-* git clone https://github.com/jakobandersen/perm_group.git
-* cd $HOME/sources/perm_group & git checkout v0.2
-* cd $HOME/sources
-* git clone https://github.com/jakobandersen/graph_canon.git
-* git clone https://github.com/jakobandersen/mod.git
+
+`cd $HOME/sources`
+
+`sudo dnf update`
+
+`dnf install which nano git python3-devel python3-sphinx librsvg2-devel pango-devel openbabel-devel pdf2svg autoconf automake libtool boost-python3-devel gcc-c++ texlive-scheme-full texi2html texinfo wget -y`
+
+`wget https://dl.bintray.com/boostorg/release/1.64.0/source/boost_1_64_0.tar.gz && tar -xf boost_1_64_0.tar.gz`
+
+`wget -c https://graphviz.gitlab.io/pub/graphviz/stable/SOURCES/graphviz.tar.gz -O graphviz-2.40.1.tar.gz && tar -xf graphviz-2.40.1.tar.gz`
+
+`git clone https://github.com/jakobandersen/perm_group.git`
+
+`cd $HOME/sources/perm_group && git checkout v0.2 && cd $HOME/sources`
+
+`git clone https://github.com/jakobandersen/graph_canon.git`
+
+`cd $HOME/sources/graph_canon && git checkout v0.2 && cd $HOME/sources`
+
+`git clone https://github.com/jakobandersen/mod.git`
 
 
-### Boost 1.64.0
-* cd $HOME/sources/boost_1_64_0/
-* ./bootstrap.sh --prefix=$HOME/mod-v0.7.0 --with-python=/usr/bin/python3
-* ./b2 -j 2
-* ./b2 install
+## Boost 1.64.0
+`cd $HOME/sources/boost_1_64_0/ && ./bootstrap.sh --prefix=$HOME/mod-v0.7.0 --with-python=/usr/bin/python3 && ./b2 -j 4 && ./b2 install`
 
-### Graphviz
-* cd $HOME/sources/graphviz-2.40.1
-* ./configure --prefix=$HOME/mod-v0.7.0 --with-boost=$HOME/mod-v0.7.0 --with-python=/usr/bin/python3
-* make -j 2
-* make install 
-### Note: Running 'which dot' should NOT give the same as 'echo $HOME/mod-v0.7.0/bin/dot'
+## Graphviz
+`cd $HOME/sources/graphviz-2.40.1 && ./configure --prefix=$HOME/mod-v0.7.0 --with-boost=$HOME/mod-v0.7.0 --with-python=/usr/bin/python3 && make -j 4 && make install`
 
-### PermGroup
-* cd $HOME/sources/perm_group
-* ./bootstrap.sh
-* ./configure --prefix=$HOME/mod-v0.7.0 --with-boost=$HOME/mod-v0.7.0
-* make -j 2
-* make install
+## PermGroup
+`cd $HOME/sources/perm_group && ./bootstrap.sh --prefix=$HOME/mod-v0.7.0 --with-python=/usr/bin/python3 && ./configure --prefix=$HOME/mod-v0.7.0 --with-boost=$HOME/mod-v0.7.0 && make -j 4 && make install`
 
-### GraphCanon
-* cd $HOME/sources/graph_canon
-* ./bootstrap.sh
-* ./configure --prefix=$HOME/mod-v0.7.0 --with-boost=$HOME/mod-v0.7.0
-* make -j 2
-* make install
+## GraphCanon
+`cd $HOME/sources/graph_canon && ./bootstrap.sh --prefix=$HOME/mod-v0.7.0 --with-python=/usr/bin/python3 && ./configure --with-perm_group=$HOME/mod-v0.7.0 --prefix=$HOME/mod-v0.7.0 --with-boost=$HOME/mod-v0.7.0 && make -j 4 && make install`
 
-### MedØlDatschgerl
-* cd $HOME/sources/mod
-* ./bootstrap.sh
-* ./configure --prefix=$HOME/mod-v0.7.0 --with-python=/usr/bin/python3 --with-boost=$HOME/mod-v0.7.0 --with-OpenBabel=/usr/include/openbabel-2.0
-* make -j 2
-* make install
+## MedØlDatschgerl
+`cd $HOME/sources/mod && ./bootstrap.sh --prefix=$HOME/mod-v0.7.0 --with-python=/usr/bin/python3 && ./configure --prefix=$HOME/mod-v0.7.0 --with-boost=$HOME/mod-v0.7.0 --with-OpenBabel=/usr/include/openbabel-2.0 && make -j 4 && make install`
 
-## Getting start
 
-### Generating a chemical network from a set of rules and storing it in the Neo4J
-* $PATH_TO_MØD/mod -f Molecules.py -f Processes_Store.py
+## Install MØDatschgerl v0.7.0 with DOCKER?
+
+Have you installed docker in your computer? 
+
+Try: https://docs.docker.com/install
+
+Downloading the docker container with all environment
+
+`docker pull waldeyr/fedora26_mod-v0.7.0:2path`
+
+Running a docker with a ready environment 
+
+`docker run -ti waldeyr/fedora26_mod-v0.7.0:mod-v0.7.0 bash`
+
+Optionally, you can map the simulation folder in docker to your a local folder in your computer
+
+`docker run -v /home/$USER:$HOME/InSilicoMetabolicModelingAndEngineering -p 7474:7474 -ti fedora26_mod-v0.7.0:mod-v0.7.0 bash`
+
+Please note that:
+* Neo4J browser runs in the port 7474 (default). So you can access from your browser http://localhost:7474
+* The neo4j authentication was disabled in the Docker container
+
+## Getting Started
+
+After install the envirnment, test it with: `$HOME/mod-v0.7.0/bin/mod`
+
+### How to run the simulations?
+
+Running the simulation 01
+
+`cd $HOME/InSilicoMetabolicModelingAndEngineering/simulation_01`
+
+`$HOME/mod-v0.7.0/bin/mod -f processes_simulation_01.py`
+
+Running the simulation 02
+
+`cd $HOME/InSilicoMetabolicModelingAndEngineering/simulation_02`
+
+`$HOME/mod-v0.7.0/bin/mod -f processes_simulation_02.py`
+
+Running the simulation 03
+
+`cd $HOME/InSilicoMetabolicModelingAndEngineering/simulation_03`
+
+`$HOME/mod-v0.7.0/bin/mod -f processes_simulation_03.py`
+
+
+### How to run and store the simulations on Neo4J?
+
+`cd $HOME/InSilicoMetabolicModelingAndEngineering/simulation_store`
+
+`$HOME/mod-v0.7.0/bin/mod -f Molecules.py -f Processes_Store.py`
 
 You can change the network removing or adding rules to the my_sumulation_file.py in the proper lines:
 ```
@@ -117,38 +179,3 @@ You can change the number of iterations in the line:
 dg = hypergraph.getHyperGraph(eductMolecules, 5)
 ```
 
-# How to run the simulations using DOCKER?
-
-Have you installed docker in your computer? 
-
-Try: https://docs.docker.com/install
-
-Downloading the docker container with all environment
-
-`docker pull waldeyr/fedora26_mod-v0.7.0`
-
-Running a docker with a ready environment 
-
-`docker run -ti waldeyr/fedora26_mod-v0.7.0:mod-v0.7.0 bash`
-
-Optionally, you can map the simulation folder in docker to your a local folder in your computer
-
-`docker run -v /home/$USER:/home/docker/InSilicoMetabolicModelingAndEngineering -ti fedora26_mod-v0.7.0:mod-v0.7.0 bash`
-
-Running the simulation 01
-
-`cd /home/docker/InSilicoMetabolicModelingAndEngineering/simulation_01`
-
-`/home/docker/mod-v0.7.0/bin/mod -f processes_simulation_01.py`
-
-Running the simulation 02
-
-`cd /home/docker/InSilicoMetabolicModelingAndEngineering/simulation_02`
-
-`/home/docker/mod-v0.7.0/bin/mod -f processes_simulation_02.py`
-
-Running the simulation 03
-
-`cd /home/docker/InSilicoMetabolicModelingAndEngineering/simulation_03`
-
-`/home/docker/mod-v0.7.0/bin/mod -f processes_simulation_03.py`
