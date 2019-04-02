@@ -29,6 +29,8 @@ class Processes_Store(ConfigClass):
         h_shift_c1_c3 = ruleGML("1-3Hshift.gml")
         h_loss = ruleGML("h_loss.gml")
         h2o_gain = ruleGML("h2o_gain.gml")
+        allyl_shift = ruleGML("allylshift.gml")
+        wagner_meerwein = ruleGML("WMshift.gml")
         popFilePrefix()
         # General breadth-first derivation strategy
         strat = (addSubset(eductMolecules) >> repeat[numberOfIterations](inputRules))

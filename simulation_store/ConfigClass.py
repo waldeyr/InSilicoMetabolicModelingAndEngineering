@@ -48,7 +48,8 @@ class ConfigClass:
 	def getDatabaseConnection(self):
 		try:
 			# opening a connection
-			g = Graph(host="127.0.0.1", user="neo4j")  # if using user/pass
+			#g = Graph(host="127.0.0.1", user="neo4j")  #use host="localhost" if using IPV6
+			g = Graph(host="127.0.0.1", user="neo4j" password="researcher")  # if using password
 			return g
 		except Exception:
 			print(self.FAIL + "\nERROR: It was not possible to connect to Neo4J." + self.ENDC)
