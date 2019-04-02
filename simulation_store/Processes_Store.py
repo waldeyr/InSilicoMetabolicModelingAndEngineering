@@ -139,7 +139,6 @@ class Processes_Store(ConfigClass):
                 iubmb = str(scenario[13].strip("\n"))
                 # Is there a scenario for the current compound?            
                 if str(modName) == str(compound['modName']):
-                    print(compound['modName'] + " == "+ modName)
                     scenarioNode = Node("Scenario", scenarioId=scenarioId, ncbiTaxon=ncbiTaxon, 
                                             ncbiSpecies=ncbiSpecies, ncbiAccession=ncbiAccession, 
                                             pubmedAccession=pubmedAccession, modName=modName,
