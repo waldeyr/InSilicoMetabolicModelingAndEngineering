@@ -1,0 +1,2 @@
+#!/bin/bash
+/home/docker/mod-v0.7.0/bin/mod -f processes_simulation_02.py
